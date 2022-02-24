@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
+  "name": "weather-awesome-demo",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +14,11 @@
     "cli",
     "weather"
   ],
-  "author": "Alex Rostov",
-  "license": "ISC"
+  "author": "Alex Navarrskij",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
+  }
 }
